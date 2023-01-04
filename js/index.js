@@ -53,6 +53,10 @@ const UI = (() => {
         productsList.appendChild(productElem);
       });
     },
+
+    enableSearchInput() {
+      inputBox.disabled = false;
+    },
   };
 })();
 
@@ -64,6 +68,7 @@ const Controller = (() => {
     const products = await Model.fetchProducts();
     Model.setProducts(products);
     UI.renderProducts(products);
+    UI.enableSearchInput();
   }
 
   function onSearchInputChange(e) {
