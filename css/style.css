@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+}
+
+.search-box {
+  margin-bottom: 30px;
+}
+
+.search-box-input {
+  padding-left: 20px;
+  height: 40px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.products-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.products-list li {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.products-list li div {
+  min-width: 30px;
+}
