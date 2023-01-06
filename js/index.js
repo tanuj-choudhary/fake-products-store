@@ -74,7 +74,7 @@ const Controller = (() => {
   function onSearchInputChange(e) {
     // Get search query
     const searchValue = e.target.value;
-    searchValue.toLowerCase();
+    searchValue = searchValue.toLowerCase();
 
     // Get products
     const products = Model.getProducts();
